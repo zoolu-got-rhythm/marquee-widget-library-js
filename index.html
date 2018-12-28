@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> movie title prototype </title>
+    <style>
+        .marqueeWidget{
+            margin: 5px;
+        }
+
+        #advert{
+            border:5px solid pink;
+            animation-name: flash;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            margin-top: 10px;
+        }
+
+        /* access child text of marquee widget for custom styling */
+        #advert :nth-child(1){
+            color: deeppink;
+        }
+
+        body{
+            background: black;
+        }
+
+        @keyframes flash {
+            from {border: 5px solid black;}
+            to {border: 5px solid deeppink;}
+        }
+    </style>
+</head>
+<body>
+    <script src="marqueeWidget.js"> </script>
+    <script src="demo.js"> </script>
+    <!--<marquee> Return of the jedi </marquee>-->
+</body>
+</html>
